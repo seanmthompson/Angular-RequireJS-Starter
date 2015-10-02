@@ -2,11 +2,11 @@ define([], function () {
     var fn = function ($state) {
 
         var addLoadingClass = function () {
-            $('body').addClass('rm-loading');
+            $('body').addClass('loading');
         };
 
         var removeLoadingClass = function () {
-            $('body').removeClass('rm-loading');
+            $('body').removeClass('loading');
         };
         
         $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){ 

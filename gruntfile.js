@@ -41,6 +41,13 @@ module.exports = function(grunt){
 				files: ['css/*.less', 'css/**/*.less'],
 				tasks: ['less']
 			}
+		},
+		
+		connect: {
+			serve: {
+				port: 1337,
+				base: ''
+			}
 		}
 		
     });

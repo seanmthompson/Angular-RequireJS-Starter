@@ -51,8 +51,8 @@
         
         var loadFn = function (dependencies) {
 	        
-            return ['$q', '$rootScope', 'rmCommonService',
-                function ($q, $rootScope, rmCommonService) {
+            return ['$q', '$rootScope',
+                function ($q, $rootScope) {
                     var dependenciesLoaded = false;
 
                     var deferred = $q.defer();
@@ -75,7 +75,7 @@
 		$stateProvider.state('home', {
 		  templateUrl: 'partials/home.html',
 		  url: '/home',
-		  controller: 'HomeCtrl',
+		  controller: 'HomeCtlr',
 		  resolve: {			
             load: loadFn(dependencies.home)            
        	  }
@@ -91,7 +91,6 @@
 		});
 		
 		$urlRouterProvider.otherwise('/home');
-		    
     });
 	
 })();
