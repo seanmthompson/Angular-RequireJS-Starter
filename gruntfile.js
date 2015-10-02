@@ -11,12 +11,13 @@ module.exports = function(grunt){
 			},
 			build: {
 				files: {
-					'public/js/app.libs.min.js': [
-						'public/js/libs/lodash/lodash.js',
-						'public/js/libs/angular/angular.js',
-						'public/js/libs/angular-animate/angular-animate.min.js',					
-						'public/js/libs/angular-sanitize/angular-sanitize.min.js',
-						'public/js/libs/angular-ui-router/release/angular-ui-router.min.js',
+					'js/app.libs.min.js': [
+						'js/libs/lodash/lodash.js',
+						'js/libs/angular/angular.js',
+						'js/libs/jquery/dist/jquery.min.js',
+						'js/libs/angular-animate/angular-animate.min.js',					
+						'js/libs/angular-sanitize/angular-sanitize.min.js',
+						'js/libs/angular-ui-router/release/angular-ui-router.min.js',
 					]
 				}
 			}
@@ -25,22 +26,23 @@ module.exports = function(grunt){
 		less: {
 		  development: {
 			options: {
-			  paths: ["public/css"],
+			  paths: ["css"],
 			  compress: true,
 			  sourceMap: true
 			},
 			files: {
-				"public/css/app.css": "public/css/app.less"			
+				"css/app.css": "css/app.less"			
 			}
 		  }
 		},
 
 		watch: {    
 			less: {
-				files: ['public/css/*.less', 'public/css/**/*.less'],
+				files: ['css/*.less', 'css/**/*.less'],
 				tasks: ['less']
 			}
 		}
+		
     });
 
     grunt.registerTask('default', []);
