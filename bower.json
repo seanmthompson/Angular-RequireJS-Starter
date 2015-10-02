@@ -1,0 +1,22 @@
+{
+  "name": "angular-requirejs-starter",
+  "version": "1.0.0",
+  "authors": [
+    "Sean Thompson <sean.thompson@rootmetrics.com>"
+  ],
+  "description": "An opinionated starter template for RequireJS based Angular apps",
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "AngularJS",
+    "RequireJS"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "angular-sanitize": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "lodash": "~3.10.1"
+  }
+}

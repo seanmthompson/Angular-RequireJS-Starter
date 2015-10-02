@@ -1,0 +1,68 @@
+<!doctype html>
+<html id="rm-app" ng-cloak class="ng-cloak">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="{{ $root.meta.description }}">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
+    
+    <meta name="fragment" content="!">
+    <link rel="shortcut icon" href="/_themes/root/img/rootmetrics_favicon.png" type="image/x-icon">
+	
+	<link rel="stylesheet" type="text/css" href="css/app.css">	
+	<link rel="stylesheet" type="text/css" href="js/libs/nprogress/nprogress.css">
+	<link rel="stylesheet" href="js/libs/leaflet/dist/leaflet.css" />
+	<link rel="stylesheet" href="js/libs/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="js/libs/RootMetrics-Chart-Library/dist/css/rm-chart-library.min.css">
+</head>
+  <body ng-class="$root.controller">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MZ3PKJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MZ3PKJ');</script>
+    <!-- End Google Tag Manager -->
+
+    <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="_themes/root/angular/js/libs/es5-shim/es5-shim.js"></script>
+    <![endif]-->
+           
+
+	
+    <div id="rm-view" ui-view autoscroll="false"></div>
+
+<script src="js/app.libs.min.js"></script>
+<script src="js/libs/requirejs/require.js"></script>
+
+<script>
+(function(){
+    require.config({	        
+        baseUrl: 'js/',
+        catchError: true,
+        paths : {
+        },
+        map: {
+            '*': {
+                'css': 'libs/require-css/css'
+            }
+        }
+    });
+
+    require(['app'], function() {
+        console.log('starting up...')
+    });
+    
+}());
+</script>
+
+</body>
+</html>

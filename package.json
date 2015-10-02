@@ -1,0 +1,25 @@
+{
+  "name": "angular-requirejs-starter",
+  "version": "1.0.0",
+  "description": "An opinionated starter template for RequireJS based Angular apps",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "requirejs",
+    "angular",
+    "angular",
+    "starter"
+  ],
+  "author": "Sean Thompson <sean.thompson@rootmetrics.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "matchdep": "*"
+  }
+}
