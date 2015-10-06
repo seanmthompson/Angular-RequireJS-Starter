@@ -42,6 +42,7 @@
         var dependencies = {	        
 	        home: commonDirectives.concat([
 		        'controllers/HomeCtrl',
+		        'directives/Sample',
 	        ]),
             
             error: commonDirectives.concat([
