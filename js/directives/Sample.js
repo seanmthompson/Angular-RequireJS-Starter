@@ -1,5 +1,5 @@
 define([], function () {
-    var directiveName = 'SampleDir';
+    var directiveName = 'sampleDir';
     var fn = function ($window) {
         return {	        
             restrict: 'C',
