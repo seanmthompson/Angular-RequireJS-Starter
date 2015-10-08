@@ -50,8 +50,7 @@
 	        ])
         };
         
-        var loadFn = function (dependencies) {
-	        
+        var loadFn = function (dependencies) {	        
             return ['$q', '$rootScope',
                 function ($q, $rootScope) {
                     var dependenciesLoaded = false;
